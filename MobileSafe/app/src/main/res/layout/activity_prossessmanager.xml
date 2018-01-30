@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        style="@style/mytitle"
+        android:text="进程管理"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_process_count"
+            android:text="进程总数"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_memoey_info"
+            android:layout_alignParentRight="true"
+            android:text="剩余/总共"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/lv_process_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+        <TextView
+            android:background="#ccc"
+            android:id="@+id/tv_des"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_all"
+            android:layout_width="0dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="全选"/>
+        <Button
+            android:id="@+id/bt_resvert"
+            android:layout_width="0dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="反选"/>
+        <Button
+            android:id="@+id/bt_clear"
+            android:layout_width="0dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="一件清除"/>
+        <Button
+            android:id="@+id/bt_setting"
+            android:layout_width="0dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设置"/>
+    </LinearLayout>
+</LinearLayout>

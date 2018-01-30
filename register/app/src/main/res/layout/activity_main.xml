@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kcy.register.MainActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/inputusename"
+        android:padding="10sp"
+        android:textSize="35sp"
+        android:id="@+id/ed_username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:padding="10sp"
+        android:ems="10"
+        android:hint="@string/inputpassward"
+        android:textSize="35sp"
+        android:id="@+id/ed_passward" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:id="@+id/login"
+                android:padding="10sp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="54dp"
+                android:layout_marginStart="54dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/checkif"
+                android:layout_toEndOf="@+id/checkif" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                android:id="@+id/checkif"
+                android:padding="10sp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginStart="52dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        style="@style/mytitle"
+        android:text="设置中心" />
+
+    <com.kcy.mobilesafe.view.SettinfItemView
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.kcy.mobilesafe"
+        android:id="@+id/siv_update"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        mobilesafe:desoff="自动更新已开启"
+        mobilesafe:deson="自动更新已关闭"
+        mobilesafe:destitle="自动更新设置"
+        android:layout_weight="0.05"></com.kcy.mobilesafe.view.SettinfItemView>
+
+    <com.kcy.mobilesafe.view.SettinfItemView
+        android:id="@+id/siv_address"
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.kcy.mobilesafe"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        mobilesafe:desoff="归属地的显示更新已开启"
+        mobilesafe:deson="归属地的显示更新已关闭"
+        mobilesafe:destitle="电话归属地的显示设置"
+        android:layout_weight="0.04"></com.kcy.mobilesafe.view.SettinfItemView>
+
+    <com.kcy.mobilesafe.view.SettingClickView
+    android:id="@+id/dcv_toast_style"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_weight="0.04"></com.kcy.mobilesafe.view.SettingClickView>
+    <com.kcy.mobilesafe.view.SettingClickView
+        android:id="@+id/dcv_location"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_weight="0.04"></com.kcy.mobilesafe.view.SettingClickView>
+
+    <com.kcy.mobilesafe.view.SettinfItemView
+        android:id="@+id/siv_blacknmber"
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.kcy.mobilesafe"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        mobilesafe:desoff="黑名单拦截开启"
+        mobilesafe:deson="黑名单拦截关闭"
+        mobilesafe:destitle="黑名单拦截设置"
+        android:layout_weight="0.04"></com.kcy.mobilesafe.view.SettinfItemView>
+    <com.kcy.mobilesafe.view.SettinfItemView
+        android:id="@+id/siv_lock"
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.kcy.mobilesafe"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        mobilesafe:desoff="程序锁开启"
+        mobilesafe:deson="程序锁关闭"
+        mobilesafe:destitle="程序锁设置"
+        android:layout_weight="0.04"></com.kcy.mobilesafe.view.SettinfItemView>
+</LinearLayout>

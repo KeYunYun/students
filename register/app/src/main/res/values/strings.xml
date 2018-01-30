@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">register</string>
+    <string name="inputpassward">请输入密码</string>
+    <string name="inputusename">请输入用户名</string>
+</resources>

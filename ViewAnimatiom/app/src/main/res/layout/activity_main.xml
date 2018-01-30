@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kcy.viewanimatiom.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/bt_tm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="透明" />
+
+        <Button
+            android:id="@+id/bt_xz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转" />
+
+        <Button
+            android:id="@+id/bt_sf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩放" />
+        <Button
+            android:id="@+id/bt_wy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位移" />
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_tz"
+        android:onClick="onClick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通知"
+        android:layout_alignBaseline="@+id/bt_nonoty"
+        android:layout_alignBottom="@+id/bt_nonoty"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginStart="23dp" />
+    <Button
+        android:id="@+id/bt_nonoty"
+        android:onClick="onClick2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消通知"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_marginEnd="31dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@mipmap/ic_launcher"
+        />
+</RelativeLayout>
